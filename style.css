@@ -35,6 +35,7 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
 img { display: block; max-width: 100%; }
 
+
 /* ─── Custom Cursor ───────────────────────────────────────── */
 .cursor {
   position: fixed;
@@ -272,6 +273,13 @@ section { padding: 8rem 0; }
   position: relative; z-index: 1;
   max-width: 820px;
 }
+.hero-content::after {
+  content: '';
+  position: absolute;
+  left: -3rem; right: -3rem; bottom: -3rem; height: 68%;
+  background: linear-gradient(0deg, rgba(8,8,8,0.65) 0%, rgba(8,8,8,0.38) 55%, transparent 100%);
+  z-index: -1; pointer-events: none;
+}
 .hero-tag {
   display: inline-flex; align-items: center; gap: 0.7rem;
   padding: 0.4rem 1rem;
@@ -412,6 +420,7 @@ section { padding: 8rem 0; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px;
+  grid-auto-rows: 300px;
   gap: 10px;
 }
 
@@ -439,12 +448,12 @@ section { padding: 8rem 0; }
 .p-item:hover .p-img-inner { transform: scale(1.04); }
 
 /* Portfolio images */
-.p1 .p-img-inner { background: url('images/JPEG-Bild (5).jpeg') center top/cover; }
-.p2 .p-img-inner { background: url('images/JPEG-Bild (9).jpeg') center/cover; }
-.p3 .p-img-inner { background: url('images/JPEG-Bild (8).jpeg') center/cover; }
-.p4 .p-img-inner { background: url('images/JPEG-Bild.jpeg') center/cover; }
-.p5 .p-img-inner { background: url('images/JPEG-Bild (7).jpeg') center/cover; }
-.p6 .p-img-inner { background: url('images/JPEG-Bild (2).jpeg') center/cover; }
+.p1 .p-img-inner { background: url('images/1000104492.jpg') center 25%/cover; }
+.p2 .p-img-inner { background: url('images/1000104462.jpg') center 40%/cover; }
+.p3 .p-img-inner { background: url('images/1000104483.jpg') center/cover; }
+.p4 .p-img-inner { background: url('images/lv_0_20260412210228.jpg') center/cover; }
+.p5 .p-img-inner { background: url('images/1000104471.jpg') center 30%/cover; }
+.p6 .p-img-inner { background: url('images/1000075420.jpg') center/cover; }
 
 /* Subtle grain overlay per card */
 .p-img::before {
@@ -640,8 +649,16 @@ section { padding: 8rem 0; }
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   padding: 0.3rem 0.8rem;
-  border: 1px solid var(--border);
-  color: var(--text-3);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text-2);
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, background 0.25s;
+  cursor: default;
+}
+.svc-tags li:hover {
+  color: var(--accent-l);
+  border-color: var(--border-h);
+  box-shadow: 0 0 14px rgba(79,142,247,0.25);
+  background: rgba(79,142,247,0.07);
 }
 .svc-btn {
   display: flex; align-items: center; gap: 0.4rem;
@@ -968,6 +985,14 @@ footer {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+@keyframes btnWiggle {
+  0%, 86%, 100% { transform: translateY(0) rotate(0deg); }
+  88%  { transform: translateY(-5px) rotate(-1.5deg); }
+  91%  { transform: translateY(2px)  rotate(1.5deg); }
+  94%  { transform: translateY(-3px) rotate(-1deg); }
+  97%  { transform: translateY(1px)  rotate(0.5deg); }
+}
+.btn-main.full { animation: btnWiggle 5s ease-in-out infinite; }
 
 /* ─── Responsive ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
