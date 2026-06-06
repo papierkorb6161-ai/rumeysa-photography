@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rümeysa Onay — Fotografie & Videografie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a class="nav-logo" href="#hero">
+      <span class="logo-first">Rümeysa</span>
+      <span class="logo-last">Onay</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#work" data-text="Arbeiten">Arbeiten</a></li>
+      <li><a href="#about" data-text="Über mich">Über mich</a></li>
+      <li><a href="#services" data-text="Leistungen">Leistungen</a></li>
+      <li><a href="#contact" data-text="Kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Anfrage stellen</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mm-bg"></div>
+    <ul>
+      <li><a href="#work" class="mm-link"><span>01</span>Arbeiten</a></li>
+      <li><a href="#about" class="mm-link"><span>02</span>Über mich</a></li>
+      <li><a href="#services" class="mm-link"><span>03</span>Leistungen</a></li>
+      <li><a href="#contact" class="mm-link"><span>04</span>Kontakt</a></li>
+    </ul>
+    <div class="mm-footer">
+      <p>onayrumeysa01@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines">
+      <div></div><div></div><div></div><div></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <div class="tag-dot"></div>
+        <span>Verfügbar für Projekte 2026</span>
+      </div>
+      <h1>
+        <span class="h1-line">Bilder,</span>
+        <span class="h1-line italic">die sprechen.</span>
+      </h1>
+      <p class="hero-sub">Fotografie &amp; Videografie — für Menschen, Marken und Momente, die zählen.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-main">
+          <span>Portfolio</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Kontakt aufnehmen</a>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="meta-num">7+</span>
+        <span class="meta-label">Jahre</span>
+      </div>
+      <div class="hero-meta-divider"></div>
+      <div class="hero-meta-item">
+        <span class="meta-num">320+</span>
+        <span class="meta-label">Projekte</span>
+      </div>
+      <div class="hero-meta-divider"></div>
+      <div class="hero-meta-item">
+        <span class="meta-num">Berlin</span>
+        <span class="meta-label">& EU-weit</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue">
+      <div class="scroll-track">
+        <div class="scroll-thumb"></div>
+      </div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Sportfotografie</span><span class="dot">·</span>
+      <span>Videografie</span><span class="dot">·</span>
+      <span>Fußball</span><span class="dot">·</span>
+      <span>Action</span><span class="dot">·</span>
+      <span>Stadion</span><span class="dot">·</span>
+      <span>Emotion</span><span class="dot">·</span>
+      <span>Sportfotografie</span><span class="dot">·</span>
+      <span>Videografie</span><span class="dot">·</span>
+      <span>Fußball</span><span class="dot">·</span>
+      <span>Action</span><span class="dot">·</span>
+      <span>Stadion</span><span class="dot">·</span>
+      <span>Emotion</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- WORK / PORTFOLIO -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Ausgewählte Arbeiten</p>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">Alle</button>
+          <button class="filter-btn" data-filter="sport">Sport</button>
+          <button class="filter-btn" data-filter="action">Action</button>
+          <button class="filter-btn" data-filter="team">Team</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="p-item p-item--tall" data-cat="sport team">
+          <div class="p-img p1">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">01</p>
+              <div>
+                <p class="p-title">VfR Frankenthal</p>
+                <p class="p-cat">Mannschaft · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-item p-item--wide" data-cat="sport action">
+          <div class="p-img p2">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">02</p>
+              <div>
+                <p class="p-title">Volle Ränge</p>
+                <p class="p-cat">Stadion · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-item" data-cat="sport action">
+          <div class="p-img p3">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">03</p>
+              <div>
+                <p class="p-title">Torjubel</p>
+                <p class="p-cat">Emotion · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-item" data-cat="sport action">
+          <div class="p-img p4">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">04</p>
+              <div>
+                <p class="p-title">Zweikampf</p>
+                <p class="p-cat">Action · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-item p-item--wide" data-cat="sport action">
+          <div class="p-img p5">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">05</p>
+              <div>
+                <p class="p-title">Finalstag der Amateure</p>
+                <p class="p-cat">Sport · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-item p-item--tall" data-cat="sport team">
+          <div class="p-img p6">
+            <div class="p-img-inner"></div>
+          </div>
+          <div class="p-info">
+            <div class="p-info-left">
+              <p class="p-num">06</p>
+              <div>
+                <p class="p-title">VfR in Aktion</p>
+                <p class="p-cat">Sport · 2024</p>
+              </div>
+            </div>
+            <div class="p-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="40" opacity="0.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <p class="photo-label">Foto folgt</p>
+          </div>
+        </div>
+        <div class="about-floater">
+          <p class="floater-title">Aktuell verfügbar</p>
+          <p class="floater-sub">Berlin & deutschlandweit</p>
+          <div class="floater-dot"></div>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p class="eyebrow">Über mich</p>
+        <h2>Hinter der Kamera</h2>
+        <div class="about-quote">
+          <p>"Jedes Bild ist ein stiller Augenblick, der für immer schreit."</p>
+        </div>
+        <p>Ich bin Rümeysa Onay — Fotografin und Videografin aus Berlin. Ich glaube daran, dass die besten Bilder nicht gemacht werden, sondern entstehen.</p>
+        <p>Mit über sieben Jahren Erfahrung in Hochzeits-, Portrait- und Brandfotografie sowie Videoproduktion bringe ich Gefühl und Handwerk zusammen.</p>
+
+        <div class="skills-list">
+          <div class="skill-row">
+            <span>Hochzeits- & Eventfotografie</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span>Portrait & Editorial</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span>Brand & Imagefilm</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span>Color Grading & Post</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-main">
+          <span>Projekt besprechen</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header center-header">
+        <p class="eyebrow">Was ich anbiete</p>
+        <h2>Leistungen</h2>
+      </div>
+      <div class="services-list">
+
+        <div class="svc-row reveal">
+          <div class="svc-num">01</div>
+          <div class="svc-content">
+            <h3>Fotografie</h3>
+            <p>Von der Hochzeit bis zum Editorial — Bilder, die Geschichten erzählen und noch Jahre später berühren.</p>
+          </div>
+          <ul class="svc-tags">
+            <li>Hochzeit</li>
+            <li>Portrait</li>
+            <li>Corporate</li>
+            <li>Fashion</li>
+          </ul>
+          <a href="#contact" class="svc-btn">Anfragen
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="svc-row reveal">
+          <div class="svc-num">02</div>
+          <div class="svc-content">
+            <h3>Videografie</h3>
+            <p>Filmische Videos mit kinoähnlicher Ästhetik — für Marken, Hochzeiten und Content, der in Erinnerung bleibt.</p>
+          </div>
+          <ul class="svc-tags">
+            <li>Hochzeitsfilm</li>
+            <li>Brand Film</li>
+            <li>Musikvideo</li>
+            <li>Reels</li>
+          </ul>
+          <a href="#contact" class="svc-btn">Anfragen
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="svc-row reveal">
+          <div class="svc-num">03</div>
+          <div class="svc-content">
+            <h3>Post-Produktion</h3>
+            <p>Professionelle Bildbearbeitung, Farbkorrektur und Schnitt — jedes Ergebnis fertig und lieferbereit.</p>
+          </div>
+          <ul class="svc-tags">
+            <li>Retusche</li>
+            <li>Color Grading</li>
+            <li>Videoschnitt</li>
+            <li>Sound</li>
+          </ul>
+          <a href="#contact" class="svc-btn">Anfragen
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <p class="eyebrow center">Kundenstimmen</p>
+      <div class="testimonials-grid">
+        <div class="testi reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Rümeysa hat unsere Hochzeit so eingefangen, wie wir sie wirklich erlebt haben. Jedes Bild erzählt eine Geschichte — wir sind überwältigt."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S&M</div>
+            <div>
+              <p class="testi-name">Sophie & Markus</p>
+              <p class="testi-role">Hochzeitspaar, Berlin 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi testi--featured reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Unglaublich professionell und dabei so herzlich. Unser Imagefilm hat die Erwartungen weit übertroffen — absolut empfehlenswert."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JK</div>
+            <div>
+              <p class="testi-name">Jana König</p>
+              <p class="testi-role">Studio Kollektiv, Berlin</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Die Portraits für unser Team haben genau das getroffen: modern, warm, authentisch. Genau das Bild, das wir nach außen tragen wollten."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MB</div>
+            <div>
+              <p class="testi-name">Max Berger</p>
+              <p class="testi-role">Startup Berlin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <div class="contact-left reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Lass uns gemeinsam etwas Schönes schaffen.</h2>
+        <div class="contact-info">
+          <a href="mailto:onayrumeysa01@gmail.com" class="contact-link">
+            <div class="contact-icon">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" width="18"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 7l8 5 8-5"/></svg>
+            </div>
+            onayrumeysa01@gmail.com
+          </a>
+          <a href="tel:+4917600000000" class="contact-link">
+            <div class="contact-icon">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" width="18"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L13 12l5 2v4a2 2 0 0 1-2 2C6.477 20 0 13.523 0 5a2 2 0 0 1 2-2z" transform="translate(1 1)"/></svg>
+            </div>
+            +49 176 000 000 00
+          </a>
+          <span class="contact-link">
+            <div class="contact-icon">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" width="18"><path d="M10 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M10 2a7 7 0 0 1 7 7c0 5-7 11-7 11S3 14 3 9a7 7 0 0 1 7-7z"/></svg>
+            </div>
+            Berlin & deutschlandweit
+          </span>
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-item" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-item" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="20"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg>
+            YouTube
+          </a>
+          <a href="#" class="social-item" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="20"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name">Dein Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">E-Mail</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <select id="service" name="service" required>
+            <option value="" disabled selected></option>
+            <option>Hochzeitsfotografie</option>
+            <option>Hochzeitsfilm</option>
+            <option>Portrait / Editorial</option>
+            <option>Corporate / Branding</option>
+            <option>Brand Film / Imagefilm</option>
+            <option>Musikvideo / Reels</option>
+            <option>Sonstiges</option>
+          </select>
+          <label for="service">Leistung</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Deine Nachricht</label>
+        </div>
+        <button type="submit" class="btn-main full">
+          <span>Anfrage absenden</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-success" id="formSuccess">Danke! Ich melde mich bald bei dir. ✦</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- SHOWROOM -->
+  <section id="showroom">
+    <div class="container">
+      <div class="section-header center-header">
+        <p class="eyebrow">Galerie</p>
+        <h2>Showroom</h2>
+      </div>
+    </div>
+    <div class="showroom-grid">
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (5).jpeg" alt="VfR Frankenthal Mannschaft" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (7).jpeg" alt="Finalstag der Amateure" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (8).jpeg" alt="Torjubel" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild.jpeg" alt="Zweikampf" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (9).jpeg" alt="Stadion" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (1).jpeg" alt="Spielszene" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (2).jpeg" alt="VfR Aktion" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (3).jpeg" alt="Zweikampf" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (4).jpeg" alt="Spielszene" /></div>
+      <div class="showroom-item reveal"><img src="images/JPEG-Bild (6).jpeg" alt="Spielszene" /></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span>Rümeysa Onay</span>
+        <p>Fotografie &amp; Videografie · Berlin</p>
+      </div>
+      <div class="footer-copy">© 2026 Rümeysa Onay</div>
+      <div class="footer-legal">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
